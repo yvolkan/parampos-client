@@ -6,7 +6,7 @@ use Param\PhpSdk\Features\G;
 
 class Config extends G
 {
-    public $version = "V2.0.0";
+    public $version = "v2.0.0";
     public string $URL;
     public string $GUID;
     public object $G;

@@ -12,7 +12,6 @@ class KartSaklamaliOnProvizyon extends TP_Islem_Odeme_OnProv_WKS
 {
     public function send()
     {
-        //TODO: Bu problemli yapıldı. URL sorunlu
         $config = Config::getInstance();
         $authObject = new Auth();
         $authObject->TP_Islem_Odeme_OnProv_WKS(
@@ -28,6 +27,7 @@ class KartSaklamaliOnProvizyon extends TP_Islem_Odeme_OnProv_WKS
         try {
             $client = new SoapClient($config->URL);
             $this->Islem_Hash = base64_encode(sha1(mb_convert_encoding($authObject->Data, "ISO-8859-9"), true));
+            print_r($this);
             $response = $client->TP_Islem_Odeme_OnProv_WKS($this);
             return $response;
         } catch (\Exception $e) {

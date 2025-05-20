@@ -7,7 +7,7 @@ use Param\PhpSdk\Features\Config;
 
 
 Config::set([
-    'URL' => 'https://test-dmz.param.com.tr/out.ws/service_ks.asmx?WSDL',
+    'URL' => 'https://testposws.param.com.tr/out.ws/service_ks.asmx?wsdl',
     'CLIENT_CODE' => '10738',
     'CLIENT_USERNAME' => 'Test',
     'CLIENT_PASSWORD' => 'Test',

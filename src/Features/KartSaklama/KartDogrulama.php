@@ -11,7 +11,6 @@ class KartDogrulama extends TP_KK_Verify
 {
     public function send()
     {
-        //TODO: Bu problemli yapıldı. URL sorunlu
         $config = Config::getInstance();
         try {
             $client = new SoapClient($config->URL);

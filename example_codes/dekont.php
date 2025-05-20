@@ -6,7 +6,7 @@ use Param\PhpSdk\Features\Dekont\Dekont;
 use Param\PhpSdk\Features\Config;
 
 Config::set([
-    'URL' => 'https://test-dmz.param.com.tr:4443/turkpos.ws/service_turkpos_test.asmx?WSDL',
+    'URL' => 'https://testposws.param.com.tr/turkpos.ws/service_turkpos_prod.asmx?wsdl',
     'CLIENT_CODE' => '10738',
     'CLIENT_USERNAME' => 'Test',
     'CLIENT_PASSWORD' => 'Test',

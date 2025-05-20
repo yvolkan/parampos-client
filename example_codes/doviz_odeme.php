@@ -7,7 +7,7 @@ use Param\PhpSdk\Features\Config;
 
 
 Config::set([
-    'URL' => 'https://test-dmz.param.com.tr:4443/turkpos.ws/service_turkpos_test.asmx?WSDL',
+    'URL' => 'https://testposws.param.com.tr/turkpos.ws/service_turkpos_prod.asmx?wsdl',
     'CLIENT_CODE' => '10738',
     'CLIENT_USERNAME' => 'Test',
     'CLIENT_PASSWORD' => 'Test',
@@ -16,7 +16,7 @@ Config::set([
 
 $odeme = new DovizOdeme();
 $odeme->setDoviz_Kodu("1001");
-$odeme->setKK_Sahibi("Halido");
+$odeme->setKK_Sahibi("Kart Sahibi");
 $odeme->setKK_No("4446763125813623");
 $odeme->setKK_SK_Ay("12");
 $odeme->setKK_SK_Yil("2026");
