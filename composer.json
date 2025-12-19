@@ -1,5 +1,5 @@
 {
-    "name": "param/php_sdk",
+    "name": "yvolkan/param",
     "description": "Param PHP Entegrasyon SDK",
     "autoload": {
         "psr-4": {
